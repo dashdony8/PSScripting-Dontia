@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Budject Tracker</title> 
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> 
+
+        <div class="app-container">
+            <div class="input-container">
+                <div class="header">
+                    <h1>Budject Tracker</h1>
+                </div>
+            </div>
+            <div id="balance">Balance: $0.00</div> 
+
+            <form id="transactionForm">
+                <input 
+                type="text"
+                 id="description" 
+                placeholder="Transaction Description"
+                required
+                />
+
+                <input
+                type="number"
+                id="amount"
+                placeholder="Amount"
+                step="0.01"
+                required
+                />
+            </form>
+        </div>
+        <script src="main.js"></script>
+
+    </body>
+</html>

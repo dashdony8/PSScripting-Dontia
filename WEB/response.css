@@ -1,0 +1,25 @@
+#container{
+    background: blue;
+    height: 800px;
+    width: 10000px;
+    border: 2px solid black;
+
+}
+@media (min-width:600px ) and (max-width: 800px) /*desktop view */
+{
+    #container{
+        background: red;
+    
+        border: 2px solid black;
+    }
+}
+ 
+@media (min-width: 800px) /*desktop view */
+
+{
+    #container{
+        background: green;
+       
+        border: 2px solid black;
+    }
+}

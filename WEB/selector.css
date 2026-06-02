@@ -1,0 +1,32 @@
+.colors { 
+    color: red; 
+
+}
+.text {
+    text-align: center;
+    font-size: 50px;
+}
+.border {
+    border-top: 10px solid black;
+    border-bottom: 10px solid green;
+}
+
+h1 
+{
+border: 2px groove black;
+}
+h2 { 
+    font-family:verdana; 
+    background: rbg;
+}
+h2{ 
+    background: maroon;
+} 
+
+#h2 {
+    background: teal;
+} 
+
+.footer {
+    background: yellow;
+}

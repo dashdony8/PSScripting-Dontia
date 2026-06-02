@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">This is heading</h1>
+    <button onclick="changeHeading()"> Click me</button>
+
+    <script type="text/javascript">
+    function changeHeading() 
+    {
+       /* document.getElementById("head").style.color ="blue" 
+       more comment here....*/;
+       let h1=document.getElementById("head");
+       h1.style.color ="white";
+       h1.style.backgroundColor="Maroon";
+       h1.innerHTML= "You clicked the button !";
+    }
+    </script>
+</body>
+</html>
