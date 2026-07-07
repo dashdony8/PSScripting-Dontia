@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo.png" alt="Logo">
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div>
+                <h1>Gordon Ramsay</h1>
+                <h2>A Michelin-starred chef, restaurateur, and TV host best known for shows like Hell's Kitchen and MasterChef</h2>
+                <a id="scrollbtn" href="#introduction"><img src="./images/scroll_arrow.png" style="filter: invert();" height="50px"></a>
+            </div>
+        </section>
+
+        <section id="introduction">
+            <div style="padding: 30px;">
+                <h1>Introduction</h1>
+                <p>
+                    Gordon Ramsay is a world-renowned British chef, restaurateur, and television personality known for his exceptional culinary skills, 
+                    Michelin-starred restaurants, and energetic presence on shows such as Hell's Kitchen, MasterChef, and Kitchen Nightmares. Through his passion for 
+                    cooking and commitment to excellence, he has become one of the most influential and recognizable figures in the culinary world.
+                </p>
+            </div>
+            
+
+            <div class="container">
+                <div class="card">
+                    <img src="./images/beef_wellington.jpg" alt="Beef Wellington Img" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Beef Wellington</b></h4>
+                        <p>Tender beef fillet which is coated with mushroom duxelles and wrapped in pastry, then baked until golden and crisp</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/pan-seared_scallops.jpg" alt="Pan-Seared Scallops Img" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Pan-Seared Scallops</b></h4>
+                        <p>Sweet sea scallops are seared to a caramelized crust while remaining delicate and buttery inside</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/Lobster_Ravioli.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Lobster Ravioli</b></h4>
+                        <p>Fresh pasta parcels are filled with rich lobster meat and served with a flavorful seafood-based sauce</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/Sticky_Toffee_Pudding.jpg" alt="Avatar" style="width:100%">
+                    <div class="card-container">
+                        <h4><b>Sticky Toffee Pudding</b></h4>
+                        <p>A moist date sponge cake is drenched in warm toffee sauce and often paired with cream or ice cream</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="margin-bottom: 30px; justify-content: center; display: flex;">
+                <a href="./projects.html" id="action-btn">See His Projects</a>
+            </div>
+            
+        </section>
+
+        <footer id="footer">
+            <p>&copy; Group 3 - May 2026</p>
+            <div id="socials">
+                <a href="https://www.instagram.com/gordongram"><img src="./images/insta.png" alt="instagram"></a>
+                <a href="https://twitter.com/GordonRamsay"><img src="./images/x.png" alt="X (Twitter)"></a>
+                <a href="https://www.tiktok.com/@gordonramsayofficial"><img src="./images/tiktok.png" alt="TikTok"></a>
+                <a href="https://www.tiktok.com/@gordonramsayofficial"><img src="./images/youtube.svg" alt="Youtube"></a>
+            </div>
+        </footer>
+    </main>
+
+    
+    <!-- Hero Parallax Effect -->
+    <script>
+        const parallax = document.getElementById("hero");
+
+        window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        parallax.style.backgroundPositionY = `${(scrollY * 0.5) -75}px`;
+        });
+  </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #004c4c;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+header > img {
+    height: 75px;
+    width: auto;
+    margin-left: 15px;
+    filter: invert();
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+}
+
+nav > a {
+    padding: 25px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+nav > a:hover {
+    color:#b2d8d8;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero > div {
+    color: #fff ;
+}
+
+h1 {
+    margin: 0;
+    font-size: 42pt;
+    color: #66b2b2;
+}
+
+h2 {
+    /*color: #b2d8d8;*/
+}
+
+h4 {
+    color: #66b2b2
+}
+
+#hero {
+    background-image: url('../images/home_hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -75px;
+    margin: 0;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#scrollbtn {
+    position: relative;
+    top: 20vh;
+}
+
+
+#footer {
+    background-color: #004c4c;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#socials > a {
+    padding: 5px;
+}
+
+#socials > a > img {
+    width: 35px;
+    filter: invert();
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+  width: 15%;
+  padding: 10px;
+  margin: 1vw
+}
+
+.card > img {
+    border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+#action-btn {
+    background-color: #66b2b2;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#action-btn:hover {
+    background-color: #004c4c;
+}
+
+/* Cell Phones */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0px;
+    }
+
+    nav > a {
+        padding: 5px;
+    }
+
+    #hero {
+        background-position-x: -600px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0;
+    }
+}
