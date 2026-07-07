@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height:1.6;
+    background:#f4f7fb;
+    color:#333;
+    margin: 0;
+
+}
+
+
+/*headers and headings */
+
+header {
+    background-color: #004c4c;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    color: #004c4c;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #004c4c;
+    margin-top: 0;
+    border-bottom: 3px solid #b2d8d8;
+    padding-bottom: 10px;
+
+}
+
+    /*navigation*/
+nav{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+}
+
+nav > a{
+    padding: 25px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+header > img {
+    height: 75px;
+    width: auto;
+    margin-left: 15px;
+    filter: invert();
+}
+
+nav > a:hover{
+    color:#b2d8d8;
+}
+
+    /*main content */
+
+main {
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+.profsection {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.profimage img{
+width: 300px;
+height: 400px;
+object-fit: cover;
+border-radius: 12px;
+box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+
+}
+
+/*articles= "contentsection"*/
+.contentsection{
+
+ background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/*footer and icons*/
+
+footer {
+    background-color: #004c4c;
+    color: white;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#socials > a > img {
+    width: 35px;
+    filter: invert();
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0px;
+    }
+
+    nav > a {
+        padding: 5px;
+    }
+}

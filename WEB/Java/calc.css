@@ -1,0 +1,36 @@
+div
+{
+    height:500px;
+    width:450px;
+    margin:50px auto;
+    text-align:center;
+    background:lightblue;
+    border:2px solid blue;
+    padding:20px;
+}
+table
+{
+    height:350px;
+    width:350px;
+}
+.btn
+{
+    background:maroon;
+    color:white;
+    text-align:center;
+    width:70px;
+    cursor:pointer;
+}
+input
+{
+    font-size:25px;
+    text-align:right;
+    padding:10px;
+    font-size:bold;
+    border-radius:20px;
+}
+.btn:hover
+{
+    background:blue;
+    border-radius:20px;
+}
